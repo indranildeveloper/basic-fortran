@@ -17,12 +17,10 @@ program matrix
     print*, (matrixarray(i, j), j=1,3)
   end do
 
-
-
 end program matrix
 
 ! Read two matrices and find the sum of the two matrices
 ! Enter a 3X3 matrix
 ! Print the matrix you entered is
 ! Enter another matrix
-! Print the matrix you entered is 
+! Print the matrix you entered is
