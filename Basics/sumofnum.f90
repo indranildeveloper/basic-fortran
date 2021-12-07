@@ -10,4 +10,4 @@ program myprogram
 
 end program myprogram
 
-! Read a small interger (less than 10) from the user and print its factorial! 
+! Read a small interger (less than 10) from the user and print its factorial!
