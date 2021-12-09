@@ -23,9 +23,9 @@ program matrixmultiplication
       end do
    end do
 
-   print*, "The first matrix is: "
-   do i =1, m1
-     print*, (a(i, j), j = 1, n1)
+   print *, "The first matrix is: "
+   do i = 1, m1
+      print *, (a(i, j), j=1, n1)
    end do
 
    print *, "Enter the elements of the second matrix"
@@ -35,21 +35,20 @@ program matrixmultiplication
       end do
    end do
 
-   do i =1, m2
-     print*, (b(i, j), j = 1, n2)
+   do i = 1, m2
+      print *, (b(i, j), j=1, n2)
    end do
-
 
    do i = 1, m1
       do j = 1, n2
-        c(i, j) = 0
+         c(i, j) = 0
          do k = 1, m2
             c(i, j) = c(i, j) + a(i, k)*b(k, j)
          end do
       end do
    end do
 
-   print*, "The value of the multiplied matrix is: "
+   print *, "The value of the multiplied matrix is: "
 
    do i = 1, m1
       print *, (c(i, j), j=1, n2)
