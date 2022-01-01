@@ -1,11 +1,8 @@
 program matrixsum
 
    implicit none
-   integer:: matrixarrayone(3, 3)
-   integer:: matrixarraytwo(3, 3)
-   integer:: matrixarraysum(3, 3)
-   integer:: i
-   integer:: j
+   integer:: matrixarrayone(3, 3), matrixarraytwo(3, 3), matrixarraysum(3, 3)
+   integer:: i, j
 
    ! For matrix A
    print *, "Enter the elements of matrix A: "
