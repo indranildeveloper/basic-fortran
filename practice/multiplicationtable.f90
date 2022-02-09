@@ -11,12 +11,15 @@ program multiplicationtable
 do i = 1, num, 1
   multiplenum = 0
   print*, "The multiplication table of", i
-  print*, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+  print*, "--------------------------------------------"
   do j = 1, 10, 1
     multiplenum = i * j
     print*, i , "X", j, "=",  multiplenum
   end do
   print*, "--------------------------------------------"
+  print*, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+  print*, "--------------------------------------------"
+
 end do
 
 
