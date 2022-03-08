@@ -2,7 +2,7 @@ program findprimenumbers
 
    implicit none
    integer :: num, prime, divisor
- 
+
    print *, "Enter a number till which you want to find prime numbers"
    read *, num
 

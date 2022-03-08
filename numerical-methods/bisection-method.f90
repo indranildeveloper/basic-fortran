@@ -17,9 +17,9 @@ program bisectionmethod
    end if
 
    ! do while (abs(f(x1) - f(x2)) > tollerance)
+
    do while (abs(x1 - x2)/x1 > tollerance)
       xm = (x1 + x2)/2.0
-
       if (f(x1)*f(xm) > 0) then
          x1 = xm
       else
