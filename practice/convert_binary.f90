@@ -1,7 +1,8 @@
 program convert_binary_decimal
 
    implicit none
-   integer:: decimal_number, count, binary_number(100), i, j, number_type
+   integer:: decimal_number, count, binary_number(100)
+   integer:: i, j, k, number_type, n_bin, n_dec
 
    print *, "Enter the type of number: "
    print *, "Press 1 for decimal number"
@@ -35,9 +36,18 @@ program convert_binary_decimal
 
    else if (number_type == 2) then
       print *, "Enter binary number: "
-      print *, "Make sure that input file has one digit per row: "
+      read *, n_bin
 
-      print *, "The binary input is given below"
+      n_dec = 0
+      i = 0
+      do while(n_bin > 0)
+       k = mod(n_bin, 10)
+       n_dec = n_dec + k * 3 ** i
+       n_bin = n_bin / 10
+       i = i + 1
+      end do
+
+      print *, "The decimal number is", n_dec
 
    end if
 
